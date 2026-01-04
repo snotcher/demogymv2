@@ -59,6 +59,10 @@ const Classes = () => {
                                     src={item.image} 
                                     alt={item.title} 
                                     className="w-full h-full object-cover opacity-40 grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700"
+                                    loading="lazy"
+                                    decoding="async"
+                                    width="400"
+                                    height="400"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/40 to-transparent"></div>
                             </div>

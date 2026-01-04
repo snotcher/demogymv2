@@ -32,9 +32,11 @@ const Hero = () => {
             <div className="absolute inset-0 z-0">
                 {/* Replaced placeholder with local image */}
                 <img 
-                    src="/Boxer in Action_upscaled_2x.png" 
+                    src="/Boxer in Action_upscaled_2x.jpg" 
                     alt="Gym Background" 
                     className="w-full h-full object-cover opacity-40 grayscale contrast-125" 
+                    fetchpriority="high"
+                    decoding="async"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-zinc-950/70 via-zinc-950/20 to-zinc-950"></div>
                 
@@ -57,8 +59,8 @@ const Hero = () => {
                     <div className="group hover:border-lime-500/30 transition-all duration-500 bg-zinc-900/60 border-white/10 border rounded-2xl pt-5 pr-5 pb-5 pl-5 shadow-2xl backdrop-blur-xl">
                         <div className="flex items-center gap-4 mb-3">
                             <div className="flex -space-x-3 overflow-hidden">
-                                <img className="inline-block h-10 w-10 rounded-full ring-2 ring-zinc-900 object-cover" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&h=100" alt="" />
-                                <img className="inline-block h-10 w-10 rounded-full ring-2 ring-zinc-900 object-cover" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&h=100" alt="" />
+                                <img className="inline-block h-10 w-10 rounded-full ring-2 ring-zinc-900 object-cover" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&h=100" alt="" width="40" height="40" loading="eager" />
+                                <img className="inline-block h-10 w-10 rounded-full ring-2 ring-zinc-900 object-cover" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&h=100" alt="" width="40" height="40" loading="eager" />
                                 <div className="h-10 w-10 rounded-full ring-2 ring-zinc-900 bg-zinc-800 flex items-center justify-center text-xs font-medium text-white">+2k</div>
                             </div>
                             <div className="">

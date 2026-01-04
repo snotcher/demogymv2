@@ -62,6 +62,10 @@ const Testimonials = () => {
                                             src={t.image} 
                                             alt={t.name}
                                             className="relative w-16 h-16 rounded-full object-cover border-2 border-white/10 group-hover:border-lime-400/50 transition-colors"
+                                            loading="lazy"
+                                            decoding="async"
+                                            width="64"
+                                            height="64"
                                         />
                                     </div>
                                     <div>

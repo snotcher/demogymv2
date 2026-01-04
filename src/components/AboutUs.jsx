@@ -17,6 +17,10 @@ const AboutUs = () => {
                                 src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=800" 
                                 alt="Modern Gym Interior" 
                                 className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-110"
+                                loading="lazy"
+                                decoding="async"
+                                width="800"
+                                height="800"
                             />
                             {/* Experience Badge */}
                             <div className="absolute bottom-6 left-6 bg-zinc-900/90 backdrop-blur-md border border-white/10 p-6 rounded-2xl">
